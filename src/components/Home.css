@@ -1,0 +1,150 @@
+.card-main {
+    width: 800px;
+    height: auto;
+    /* border: 2px solid; */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: rgb(55, 54, 54);
+    /* background-color: white; */
+}
+
+.card {
+    /* border: 2px solid; */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 5px 10px rgb(225, 84, 84); */
+}
+.card:hover{
+    transform: translateY(-2px);
+
+
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.main{
+    position: relative;
+}
+
+.whole  {
+    background-color: rgb(55, 54, 54);
+    /* background-color: white; */
+    height: 100vh;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+
+    padding-top: 50px;
+    /* padding-top: 100px; */
+    /* position: relative; */
+}
+
+.function{
+    display: flex;
+    justify-content: space-between;
+}
+.function button:hover{
+    cursor: pointer;
+}
+.function button{
+    background-color: rgb(23,23,23) ;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 768px) {
+    .card-main {
+        width: 80%;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card {
+        height: 120px;
+    }
+}
+
+@media (max-width: 445px) {
+    .card-main {
+        max-width: 300px;
+        /* height: auto; */
+    }
+    .card-main{
+        /* column-gap: 5px; */
+        /* row-gap: 0px; */
+    }
+
+    .card img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card {
+        height: 70px;
+    }
+}
+
+.complete{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 300px;
+    padding-top: 250px;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 150px;
+    top: 0;
+
+}
+.complete .main{
+    line-height: 50px;
+    flex: 1;
+}
+.complete button{
+    background-color: rgb(23,23,23) ;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+.complete button:hover{
+    cursor: pointer;
+}
+.complete p{    
+    /* padding-top: 100px; */
+    /* border: 2px solid; */
+    /* margin-top:100px; */
+    position: fixed;
+    bottom: 0;
+    margin: auto 0;
+    width: 100%;
+    padding-bottom:10px;
+}
+
+.whlole{
+    position: relative;
+}
